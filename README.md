@@ -28,7 +28,7 @@ Please run the vignette of the CBN2Path R package, which provides detailed infor
 
 [1] Hosseini, S.-R. Robust inference of cancer progression pathways using Conjunctive Bayesian Networks. BioRxiv (2025). [In Review]
 
-[2] Choi-Kim, W. & Hosseini, S.-R. CBN2Path: An R package for the analysis of cancer progression pathways using Conjunctive Bayesian Networks. F1000Research [to appear] (2025).
+[2] Choi-Kim, W. & Hosseini, S.-R. CBN2Path: An R/Bioconductor package for the analysis of cancer progression pathways using Conjunctive Bayesian Networks. F1000Research [to appear] (2025).
 
 
 
