@@ -20,7 +20,7 @@ However, in order to make the pipeline easier to follow and also to facilitate t
 
 •	Source code available from: https://github.com/rockwillck/CBN2Path
 
-Please see the vignette of the CBN2Path R package, which provides detailed information on how to use different CBN models and their associated pathway analysis functions.
+Please run the vignette of the CBN2Path R package, which provides detailed information on how to use different CBN models and their associated pathway analysis functions.
 
 ---
 
