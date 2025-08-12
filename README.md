@@ -15,7 +15,9 @@ The analyses in the R-CBN paper [1] were performed using a sequential pipeline s
 However, we have recently integrated the R-CBN method along with the other CBN models and all the functions necessary for quantification, analysis and visualization of cancer progression pathways in a new R package named **CBN2Path** [2], which be available on Bioconductor:
 
 •	Source code available from: https://github.com/rockwillck/CBN2Path
+
 •	Software will be available from:  https://bioconductor.org/packages/CBN2Path  
+
 •	Archived software available from: https://doi.org/10.5281/zenodo.16791480 
 
 
