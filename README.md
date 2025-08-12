@@ -12,7 +12,7 @@ Cancer is an evolutionary disorder driven by stepwise accumulation of selectivel
 
 ---
 The analyses in the R-CBN paper [1] were performed using a sequential pipeline starting from the original C implementation of the CT-CBN model, followed by the R implementation of the R-CBN algorithm and the associated pathway analyses. 
-However, we have recently integrated the R-CBN method along with the other CBN models and all the functions necessary for quantification, analysis and visualization of cancer progression pathways in a new R package named **CBN2Path** [2], which be available on Bioconductor:
+However, in order to make the pipeline easier to follow and also to facilitate the furture applications of the R-CBN algorithm, we have recently integrated the R-CBN method along with the other CBN models and all the functions necessary for quantification, analysis and visualization of cancer progression pathways in a new R package named **CBN2Path** [2], which be available on Bioconductor:
 
 •	Software will be available from:  https://bioconductor.org/packages/CBN2Path
 
@@ -20,7 +20,7 @@ However, we have recently integrated the R-CBN method along with the other CBN m
 
 •	Source code available from: https://github.com/rockwillck/CBN2Path
 
-Please see the vignette of the CBN2Path R package, which provides detailed information on how to use different CBN models and their associated pathway analysis and visualization functions.
+Please see the vignette of the CBN2Path R package, which provides detailed information on how to use different CBN models and their associated pathway analysis functions.
 
 ---
 
