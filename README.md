@@ -22,7 +22,13 @@ However, we have recently integrated the R-CBN method along with the other CBN m
 
 Please see the vignette of the CBN2Path R package, which provides detailed information on how to use different CBN models and their associated pathway analysis and visualization functions.
 
+---
 
+## References
+
+[1] Hosseini, S.-R. Robust inference of cancer progression pathways using Conjunctive Bayesian Networks. BioRxiv (2025). [In Review]
+
+[2] Choi-Kim, W. & Hosseini, S.-R. CBN2Path: An R package for the analysis of cancer progression pathways using Conjunctive Bayesian Networks. F1000Research [to appear] (2025).
 
 
 
