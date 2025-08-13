@@ -50,7 +50,15 @@ Each of the above subfolders also includes two nested subfolders:
 
 2. **Low_Mutation_Rate**: The genotypes are generated from evolutionary processes with low mutation rate (10^-6).
 
-Theer 100 genotype files in the DAG representable subfolders, while there are 111 genotypes in the DAG non-representable subfolders. Each genotype file stores a binary matrix with 200 rows (samples) and 7 columns (mutations).
+There are 100 genotype files in the DAG representable subfolders, while there are 111 genotypes in the DAG non-representable subfolders. Each genotype file stores a binary matrix with 200 rows (samples) and 7 columns (mutations).
+
+Furthermore, under the Simulated_Data directory, two .rds files are included:
+
+1. **FitnessLandcape_Representable.rds**: This stores a matrix with 128 rows (each corresponding to one of the 2^7=128 potential binary genotypes), and 100 colmns (each corresponding to one of the 100 representable fitness landscapes).
+   
+2. **FitnessLandcape_NON_Representable.rds**: This stores a matrix with 128 rows (each corresponding to one of the 2^7=128 potential binary genotypes), and 111 colmns (each corresponding to one of the 111 non-representable fitness landscapes).
+
+
 
 
 
