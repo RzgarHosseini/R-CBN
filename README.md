@@ -71,7 +71,7 @@ Real Data folder contains two subfolders:
 1. **Genotypes**: In this subfolder 15 files each corresponding to one the 15 cancer types are included. Each of these files store a binary matrix with 10 columns corresponding to the 10 most frequently mutated driver genes in each cancer type.
 The number of rows represent the number of samples (patients), and so it differs across cancer types.
 
-2. **Genenames**: In this subfolder 15 files each corresponding to one the 15 cancer types are included. Each of these files lists the name of the 10 most frequently mutated genes for each cancer type.
+2. **Genenames**: In this subfolder 15 files each corresponding to one the 15 cancer types are included. Each of these files lists the names of the 10 most frequently mutated genes for each cancer type.
 
 
 
