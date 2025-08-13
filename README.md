@@ -50,7 +50,7 @@ Each of the above subfolders also includes two nested subfolders:
 
 2. **Low_Mutation_Rate**: The genotypes are generated from evolutionary processes with low mutation rate (10^-6).
 
-Theer 100 genotype files in the DAG representable subfolders, while there are 111 genotypes in the DAG non-representable subfolders. Each genotype file includes 200 rows (samples) and 7 columns (mutations).
+Theer 100 genotype files in the DAG representable subfolders, while there are 111 genotypes in the DAG non-representable subfolders. Each genotype file stores a binary matrix with 200 rows (samples) and 7 columns (mutations).
 
 
 
