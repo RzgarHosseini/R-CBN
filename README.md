@@ -25,8 +25,35 @@ Please run the vignette of the CBN2Path R package, which provides detailed infor
 
 ---
 ## Data Folders
+The synthetic, simulated and real datasets used in the R-CBN paper [1] are available in this github repository as three separate folders as follows:
+
 ### Synethtic data
+The synthetic data includes two subfolders: 
+
+1. **Without_Mutual_Exclusivity**: the genotype data does not include patterns of mutual exclusivity.
+
+2. **With_Mutual_Exclusivity**: the genotype data does includes patterns of mutual exclusivity.
+
+Each subfolder includes 219 genotype data files, and file stores a binary matrix with 200 rows (samples) and 4 columns (mutations). Each genotype file represents one of the 219 unique (transitively-closed) DAGs of restrictions. The genotypes in these files strictly respect the restrictions imposed by their corresting DAG.
+
+
 ### Simulated data
+The simulated data includes two subfolders:
+
+1. **DAG_Representable**: The genotypes are generated from evolutionary processes operating on a DAG representable fitness landscape.
+
+2. **DAG_Representable**: The genotypes are generated from evolutionary processes operating on a DAG non-representable fitness landscape.
+
+Each of the above subfolders also includes two nested subfolders:
+
+1. **High_Mutation_Rate**: The genotypes are generated from evolutionary processes with high mutation rate (10^-5).
+
+2. **Low_Mutation_Rate**: The genotypes are generated from evolutionary processes with high mutation rate (10^-6).
+
+Theer 100 genotype files in the DAG representable subfolders, while there are 111 genotypes in the DAG non-representable subfolders. Each genotype file includes 200 rows (samples) and 7 columns (mutations).
+
+
+
 ### Real Data
 
 ## References
