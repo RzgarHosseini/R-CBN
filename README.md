@@ -65,8 +65,16 @@ Furthermore, under the Simulated_Data directory, two .rds files are included:
 
 ### iii) Real Data
 The real genomic data are obtained from the TCGA dataset that includes genomic profiles of cancer patients belonging to 15 different cancer types.
-Thus, in this folder, 15 files each corresponding to one the 15 cancer types are included. Each of these files store a binary matrix with 10 columns corresponding to the 10 most frequently mutated driver genes in each cancer type.
-The number of rwos represent the number of patients, and so it differs across cancer types. 
+
+Real Data folder contains two subfolders:
+
+1. **Genotypes**: In this subfolder 15 files each corresponding to one the 15 cancer types are included. Each of these files store a binary matrix with 10 columns corresponding to the 10 most frequently mutated driver genes in each cancer type.
+The number of rows represent the number of samples (patients), and so it differs across cancer types.
+
+2. **Genenames**: In this subfolder 15 files each corresponding to one the 15 cancer types are included. Each of these files lists the name of the 10 most frequently mutated genes for each cancer type.
+
+
+
 
 ## References
 
