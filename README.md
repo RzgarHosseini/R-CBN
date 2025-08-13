@@ -42,7 +42,7 @@ The simulated data includes two subfolders:
 
 1. **DAG_Representable**: The genotypes are generated from evolutionary processes operating on a DAG representable fitness landscape.
 
-2. **DAG_Representable**: The genotypes are generated from evolutionary processes operating on a DAG non-representable fitness landscape.
+2. **DAG_NonRepresentable**: The genotypes are generated from evolutionary processes operating on a DAG non-representable fitness landscape.
 
 Each of the above subfolders also includes two nested subfolders:
 
