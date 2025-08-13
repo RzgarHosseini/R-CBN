@@ -29,7 +29,7 @@ The synthetic, simulated and real datasets used in the R-CBN paper [1] are avail
 
 
 
-### * Synethtic data
+### i) Synethtic data
 The synthetic data includes two subfolders: 
 
 1. **Without_Mutual_Exclusivity**: the genotype data does not include patterns of mutual exclusivity.
@@ -40,7 +40,7 @@ Each subfolder includes 219 genotype data files, and file stores a binary matrix
 
 
 
-### * Simulated data
+### ii) Simulated data
 The simulated data includes two subfolders:
 
 1. **DAG_Representable**: The genotypes are generated from evolutionary processes operating on a DAG representable fitness landscape.
@@ -63,7 +63,7 @@ Furthermore, under the Simulated_Data directory, two .rds files are included:
 
 
 
-### * Real Data
+### iii) Real Data
 The real genomic data are obtained from the TCGA dataset that includes genomic profiles of cancer patients belonging to 15 different cancer types.
 Thus, in this folder, 15 files each corresponding to one the 15 cancer types are included. Each of these files store a binary matrix with 10 columns corresponding to the 10 most frequently mutated driver genes in each cancer type.
 The number of rwos represent the number of patients, and so it differs across cancer types. 
