@@ -27,7 +27,9 @@ Please run the vignette of the CBN2Path R package, which provides detailed infor
 ## Data Folders
 The synthetic, simulated and real datasets used in the R-CBN paper [1] are available in this github repository as three separate folders as follows:
 
-### Synethtic data
+
+
+#### Synethtic data
 The synthetic data includes two subfolders: 
 
 1. **Without_Mutual_Exclusivity**: the genotype data does not include patterns of mutual exclusivity.
@@ -37,7 +39,8 @@ The synthetic data includes two subfolders:
 Each subfolder includes 219 genotype data files, and file stores a binary matrix with 200 rows (samples) and 4 columns (mutations). Each genotype file represents one of the 219 unique (transitively-closed) DAGs of restrictions. The genotypes in these files strictly respect the restrictions imposed by their corresting DAG.
 
 
-### Simulated data
+
+#### Simulated data
 The simulated data includes two subfolders:
 
 1. **DAG_Representable**: The genotypes are generated from evolutionary processes operating on a DAG representable fitness landscape.
@@ -59,7 +62,8 @@ Furthermore, under the Simulated_Data directory, two .rds files are included:
 2. **FitnessLandcape_NON_Representable.rds**: This stores a matrix with 128 rows (each corresponding to one of the 2^7=128 potential binary genotypes), and 111 colmns (each corresponding to one of the 111 non-representable fitness landscapes).
 
 
-### Real Data
+
+#### Real Data
 The real genomic data are obtained from the TCGA dataset that includes genomic profiles of cancer patients belonging to 15 different cancer types.
 Thus, in this folder, 15 files each corresponding to one the 15 cancer types are included. Each of these files store a binary matrix with 10 columns corresponding to the 10 most frequently mutated driver genes in each cancer type.
 The number of rwos represent the number of patients, and so it differs across cancer types. 
