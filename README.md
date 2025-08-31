@@ -80,7 +80,7 @@ The number of rows represent the number of samples (patients), and so it differs
 
 [1] Hosseini, S.-R. Robust inference of cancer progression pathways using Conjunctive Bayesian Networks. BioRxiv (2025). [In Review]
 
-[2] Choi-Kim W and Hosseini SR. CBN2Path: an R/Bioconductor package for the analysis of cancer progression pathways using Conjunctive Bayesian Networks [version 1; peer review: awaiting peer review]. F1000Research 2025, 14:834 (https://doi.org/10.12688/f1000research.168810.1)
+[2] Choi-Kim W and Hosseini SR. CBN2Path: an R/Bioconductor package for the analysis of cancer progression pathways using Conjunctive Bayesian Networks. F1000Research 2025, 14:834 (https://doi.org/10.12688/f1000research.168810.1)
 
 
 
