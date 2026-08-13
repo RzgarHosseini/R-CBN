@@ -1,2 +1,2 @@
 # R-CBN
-The codes and data including details of the pipeline will be provided soon.
+The codes and data including the details of the pipeline will be provided soon.
