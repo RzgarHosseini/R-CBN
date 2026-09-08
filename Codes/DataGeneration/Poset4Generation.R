@@ -163,6 +163,6 @@ for (i in 2:219){
 
 
 for (i in 1:219){
-  write(t(Posets[[i]]),file=paste("./Posets4/poset",i,".dat",sep=""),ncolumns=2,sep=" ")
+  write(t(Posets[[i]]),file=paste("./Data/Posets4/poset",i,".dat",sep=""),ncolumns=2,sep=" ")
 }
 
