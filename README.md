@@ -106,28 +106,27 @@ The list of codes are color-coded and divided into 7 sections: <br>
 The set of poset files within the $${\color{blue}Data/Posets4}$$ and $${\color{blue}Data/Posets5}$$ directories have been obtained by running the $${\color{blue}Codes/12\\_Poset4Generation.R}$$ and $${\color{blue}Codes/13\\_Poset5Generation.R}$$ R scripts as follows: <br>
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
-$ Rscript --vanilla Codes/12_Poset4Generation.R
-$ Rscript --vanilla Codes/13_Poset5Generation.R
+$ Rscript --vanilla Codes/12_Poset4Generation.R $PWD
+$ Rscript --vanilla Codes/13_Poset5Generation.R $PWD
 ```
 Note that both of the above script files require the functions defined in $${\color{blue}/Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}/Codes/02\\_PosetGeneration\\_Functions.R}$$. <br>
 
 #### 3.1.2 Generating the synthetic data:
-The set of synthetic genotype files within the $${\color{blue}Data/Synthetic\\_Data}$$ directory have been obtained by running the $${\color{blue}Codes/12\\_Poset4Generation.R}$$ R script as follows: <br>
+The set of synthetic genotype files within the $${\color{blue}Data/Synthetic\\_Data}$$ directory have been obtained by running the $${\color{blue}Codes/14\\_SyntheticDataGeneration.R}$$ R script as follows: <br>
 
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
-$ Rscript --vanilla Codes/12_Poset4Generation.R
-$ Rscript --vanilla Codes/13_Poset5Generation.R
+$ Rscript --vanilla Codes/14_SyntheticDataGeneration.R $PWD
 ```
 Note that the above script file requires the functions defined in $${\color{blue}/Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}03\\_SyntheticDataGeneration\\_Functions.R}$$. <br>
 
 #### 3.1.3 Creating erroneous genotype data:
 To evaluate the robustness of the CBN models, creating genotype files containing genotypic errors of a given rate is necessary. <br>
-The $\color{blue}{Codes/15\\_MutantGeneration.R}$ R script creates the erroneous genotype files representing false positive and false negative errors of various rates for all the synthetic and simulated genotypic data. <br>
+The $\color{blue}{Codes/15\\_MutantGeneration.R}$ R script creates the erroneous genotype files each representing false positive and false negative errors of a given rate (both for synthetic and simulated data). <br>
 
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
-$ Rscript --vanilla Codes/15_MutantGeneration.R
+$ Rscript --vanilla Codes/15_MutantGeneration.R $PWD
 ```
 Note that the above script file requires the functions defined in $${\color{blue}/Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}04\\_MutantGeneration\\_Function.R}$$. <br>
 
