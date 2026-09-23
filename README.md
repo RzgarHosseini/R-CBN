@@ -76,7 +76,7 @@ The 219 unique transitively-closed DAGs of size n=4 are provided in the followin
 - Data/Posets4 <br>
 
 The 4231 unique transitively-closed DAGs of size n=5 are provided in the following folder: <br> 
--Data/Posets5 <br>
+- Data/Posets5 <br>
 
 The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below.
 
