@@ -25,7 +25,7 @@ You can download the R codes for the BCBN R at: https://bsse.ethz.ch/cbg/softwar
 We have slightly debugged and updated the original BCBN codes, and presented it as an R-package called "rBCBN" that is available at: https://github.com/rockwillck/rBCBN/tree/main <br>
 The "rBCBN" is necessary for the BCBN based workflow. <br>
 
-$\color{blue}{\**Note**}$ The CT-CBN software must be installed at the same directory as where this repository is going to be located. <br>
+$${\color{blue}Notes:}$$ The CT-CBN software must be installed at the same directory as where this repository is going to be located. <br>
 Thus, the full address to the CT-CBN software should be "Full_Path_to_the_R-CBN_Repository"/ct-cbn-0.1.04b/ct-cbn. Otherwise, the address to the software in the following codes must be manually edited: <br>
 17_QuartetRCBN_Execution.R <br>
 21_CTCBN_Execution.R <br>
