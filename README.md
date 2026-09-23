@@ -130,7 +130,12 @@ $\color{blue}{Codes/15_\MutantGeneration.R}$ <br>
 $\color{blue}{Codes/15\_\MutantGeneration.R}$ <br>
 $\color{blue}{Codes/15\\_MutantGeneration.R}$ <br>
 $\color{blue}{Codes/15_\\MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15\\_\\MutantGeneration.R}$ <br>
+$\color{blue}{Codes/15\\_MutantGeneration.R}$ <br>
+
+$\color{blue}{\_}$
+$\color{blue}{a\_}$
+$\color{blue}{\_a}$
+$\color{blue}{a\_b}$
 
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
