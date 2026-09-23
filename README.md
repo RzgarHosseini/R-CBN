@@ -77,13 +77,25 @@ The 219 unique transitively-closed DAGs of size n=4 are provided in the followin
 The 4231 unique transitively-closed DAGs of size n=5 are provided in the following folder: <br> 
 - Data/Posets5 <br>
 
-The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below.
+The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below. <br>
 
 
 ---
 
 ## 3. Codes:
-X
+The list of R codes required for running the R-CBN-based, CT-CBN-based, H-CBN-based and B-CBN-Based workflows for quantifying pathway probability distributions starting from a given binary genotype data is provided in the following excel sheet and its image below: <br>
+- Codes/00_CodeList.xlsx <br>
+
+The list of codes are color-coded and divided into 7 sections: <br>
+- Part 1 (Yellow): Includes 11 .R files each containing a set of functions required for a specific step in one of the workflow. <br>
+- Part 2 (Green): Includes 4 R scripts each containing a sequence of instructions resulting in generation of the data discussed above (creating poset files, generating synthetic data and mutating the original genotype data). <br>
+- Part 3 (Red): Includes 4 R scripts each containing a sequence of instructions to implement the (Quartet) RCBN and the (Ensemble) RCBN algorithms. <br>
+- Part 4 (black): Includes 3 R scripts each containing a sequence of instructions to implement the CT-CBN model. <br>
+- Part 5 (gray): Includes 3 R scripts each containing a sequence of instructions to implement the H-CBN model. <br>
+- Part 6 (blue): Includes 3 R scripts each containing a sequence of instructions to implement the B-CBN model. <br>
+- Part 7 (purple): Includes 2 R scripts containing analyses of the inferred pathwaty probability distributions (pathway compatibility analysis and fitness-landscape-based analysis) <br>
+
+
 <img width="1579" height="504" alt="Screenshot 2026-09-21 at 8 24 15 PM" src="https://github.com/user-attachments/assets/d235accc-8304-46c5-99ff-b4ff988d7ba8" />
 
 ---
