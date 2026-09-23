@@ -122,7 +122,7 @@ Note that the above script file requires the functions defined in $${\color{blue
 
 #### 3.1.3 Creating erroneous genotype data:
 To evaluate the robustness of the CBN models, creating genotype files containing genotypic errors of a given rate is necessary. <br>
-The $\color{blue}{Codes/15\_MutantGeneration.R}$ R script creates the erroneous genotype files representing false positive and false negative errors of various rates for all the synthetic and simulated genotypic data. <br>
+The $\color{blue}{Codes/15\_\MutantGeneration.R}$ R script creates the erroneous genotype files representing false positive and false negative errors of various rates for all the synthetic and simulated genotypic data. <br>
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
 $ Rscript --vanilla Codes/15_MutantGeneration.R
