@@ -13,14 +13,17 @@ Cancer is an evolutionary disorder driven by stepwise accumulation of selectivel
 
 ---
 ## Prerequisites and Installation:
-#### CT-CBN Software:
-X
 
-#### H-CBN Software:
-X
+R-CBN is not an R package, but rather it is presented in this repository as a workflow in R, which requires the CT-CBN software as a prerequisite.
+Furthermore, in this repository, the workflows in R for the alternative CBN models, including CT-CBN, H-CBN and B-CBN are provided, which requires the following original softwares to be installed in advance.
 
-#### B-CBN Software:
-X
+#### CT-CBN and H-CBN Softwares:
+You can download the CT-CBN and H-CBN softwares and follow the installation instructions at: https://bsse.ethz.ch/cbg/software/ct-cbn.html 
+
+#### BCBN Software:
+You can download the R codes for the BCBN R at: https://bsse.ethz.ch/cbg/software/bcbn.html
+We have slightly debugged and updated the original BCBN codes as an R-package called "rBCBN", which is available at: https://github.com/rockwillck/rBCBN/tree/main
+The "rBCBN" is necessary for the BCBN based workflow.
 
 ---
 
