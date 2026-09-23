@@ -19,11 +19,11 @@ Furthermore, in this repository, the workflows in R for the alternative CBN mode
 
 #### CT-CBN and H-CBN Softwares:
 You can download the CT-CBN and H-CBN softwares and follow the installation instructions at: https://bsse.ethz.ch/cbg/software/ct-cbn.html 
-
+\\
 #### BCBN Software:
-You can download the R codes for the BCBN R at: https://bsse.ethz.ch/cbg/software/bcbn.html
+You can download the R codes for the BCBN R at: https://bsse.ethz.ch/cbg/software/bcbn.html \\
 We have slightly debugged and updated the original BCBN codes as an R-package called "rBCBN", which is available at: https://github.com/rockwillck/rBCBN/tree/main
-The "rBCBN" is necessary for the BCBN based workflow.
+The "rBCBN" is necessary for the BCBN based workflow.\\
 
 ---
 
