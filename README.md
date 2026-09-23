@@ -13,15 +13,9 @@ Cancer is an evolutionary disorder driven by stepwise accumulation of selectivel
 ## 1. Prerequisites and Installation:
 
 R-CBN is not an R package, but rather it is presented here as an R workflow, which requires the CT-CBN software developed originally at Prof. Beerenwinkel's lab. <br>
-Furthermore, in this repository, the R workflows for the alternative CBN models, including CT-CBN, H-CBN and B-CBN are provided, which require their original softwares to be installed in advance. <br>
 
 #### 1.1. CT-CBN and H-CBN Softwares:
 You can download the CT-CBN and H-CBN softwares and follow the installation instructions at: https://bsse.ethz.ch/cbg/software/ct-cbn.html <br>
-
-#### 1.2. BCBN Software:
-You can download the BCBN R codes at: https://bsse.ethz.ch/cbg/software/bcbn.html <br>
-We have slightly debugged and updated the original BCBN code, and presented it as an R-package called "rBCBN" that is available at: https://github.com/rockwillck/rBCBN/tree/main <br>
-The "rBCBN" is necessary for the BCBN based workflow. <br>
 
 $${\color{red}Note:}$$ The CT-CBN software must be installed at the same directory as the one where this repository is going to be located. <br>
 Thus, the full address to the CT-CBN software should be "Full_Path_to_the_R-CBN_Repository"/ct-cbn-0.1.04b/ct-cbn. Otherwise, the address to the software in the following codes must be manually edited: <br>
@@ -30,6 +24,11 @@ Thus, the full address to the CT-CBN software should be "Full_Path_to_the_R-CBN_
 - Codes/24_HCBN_Execution.R <br>
 - Codes/28_BCBN_Quantification.R <br>
 - Codes/Misc/QuintetRCBN_Execution.R <br>
+
+#### 1.2. BCBN Software:
+You can download the BCBN R codes at: https://bsse.ethz.ch/cbg/software/bcbn.html <br>
+We have slightly debugged and updated the original BCBN code, and presented it as an R-package called "rBCBN" that is available at: https://github.com/rockwillck/rBCBN/tree/main <br>
+The "rBCBN" is necessary for the BCBN based workflow. <br>
 
 ---
 
