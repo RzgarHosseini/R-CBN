@@ -124,19 +124,6 @@ Note that the above script file requires the functions defined in $${\color{blue
 To evaluate the robustness of the CBN models, creating genotype files containing genotypic errors of a given rate is necessary. <br>
 The $\color{blue}{Codes/15\\_MutantGeneration.R}$ R script creates the erroneous genotype files representing false positive and false negative errors of various rates for all the synthetic and simulated genotypic data. <br>
 
-$\color{blue}{Codes/15_MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15\_MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15_\MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15\_\MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15\\_MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15_\\MutantGeneration.R}$ <br>
-$\color{blue}{Codes/15\\_MutantGeneration.R}$ <br>
-
-$\color{blue}{\_}$
-$\color{blue}{a\_}$
-$\color{blue}{\_a}$
-$\color{blue}{a\_b}$
-
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
 $ Rscript --vanilla Codes/15_MutantGeneration.R
