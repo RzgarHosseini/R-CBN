@@ -109,7 +109,7 @@ $ cd Full_Path_to_the_R-CBN_Repository
 $ Rscript --vanilla Codes/12_Poset4Generation.R $PWD
 $ Rscript --vanilla Codes/13_Poset5Generation.R $PWD
 ```
-Note that both of the above script files require the functions defined in $${\color{blue}/Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}/Codes/02\\_PosetGeneration\\_Functions.R}$$. <br>
+Note that both of the above script files require the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}/Codes/02\\_PosetGeneration\\_Functions.R}$$. <br>
 
 #### 3.1.2 Generating the synthetic data:
 The set of synthetic genotype files within the $${\color{blue}Data/Synthetic\\_Data}$$ directory have been obtained by running the $${\color{blue}Codes/14\\_SyntheticDataGeneration.R}$$ R script as follows: <br>
@@ -118,7 +118,7 @@ The set of synthetic genotype files within the $${\color{blue}Data/Synthetic\\_D
 $ cd Full_Path_to_the_R-CBN_Repository
 $ Rscript --vanilla Codes/14_SyntheticDataGeneration.R $PWD
 ```
-Note that the above script file requires the functions defined in $${\color{blue}/Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}03\\_SyntheticDataGeneration\\_Functions.R}$$. <br>
+Note that the above script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/03\\_SyntheticDataGeneration\\_Functions.R}$$. <br>
 
 #### 3.1.3 Creating erroneous genotype data:
 To evaluate the robustness of the CBN models, creating genotype files containing genotypic errors of a given rate is necessary. <br>
@@ -128,7 +128,7 @@ The $\color{blue}{Codes/15\\_MutantGeneration.R}$ R script creates the erroneous
 $ cd Full_Path_to_the_R-CBN_Repository
 $ Rscript --vanilla Codes/15_MutantGeneration.R $PWD
 ```
-Note that the above script file requires the functions defined in $${\color{blue}/Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}04\\_MutantGeneration\\_Function.R}$$. <br>
+Note that the above script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/04\\_MutantGeneration\\_Function.R}$$. <br>
 
 ---
 
