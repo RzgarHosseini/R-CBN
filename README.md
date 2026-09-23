@@ -25,11 +25,11 @@ The "rBCBN" is necessary for the BCBN based workflow. <br>
 
 $${\color{purple}Note:}$$ The CT-CBN software must be installed at the same directory as the one where this repository is going to be located. <br>
 Thus, the full address to the CT-CBN software should be "Full_Path_to_the_R-CBN_Repository"/ct-cbn-0.1.04b/ct-cbn. Otherwise, the address to the software in the following codes must be manually edited: <br>
-Codes/17_QuartetRCBN_Execution.R <br>
-Codes/21_CTCBN_Execution.R <br>
-Codes/24_HCBN_Execution.R <br>
-Codes/28_BCBN_Quantification.R <br>
-Codes/Misc/QuintetRCBN_Execution.R <br>
+- Codes/17_QuartetRCBN_Execution.R <br>
+- Codes/21_CTCBN_Execution.R <br>
+- Codes/24_HCBN_Execution.R <br>
+- Codes/28_BCBN_Quantification.R <br>
+- Codes/Misc/QuintetRCBN_Execution.R <br>
 
 ---
 
@@ -44,18 +44,41 @@ The following two separate synthetic datasets are included, which differ based o
 
 Each dataset contains 219 binary genotype matrices each corresponding to one of the 219 unique transitively closed DAGs of size 4. <br>
 Each matrix has 200 rows and 4 columns to represent 200 samples of binary genotypes of length 4. <br>
-The codes generating these synthetic data are presented and discussed in the **"3.1. Data Generation"** section below. <br>
+The codes generating these synthetic data are presented and discussed in section **"3.1. Data Generation"** below. <br>
 
 #### 2.2. Simulated Data
-Data/Simulated_Data/FitnessLandcapes.rds <br>
-Data/Simulated_Data/Genotypes/High_Mutation_Rate <br>
-Data/Simulated_Data/Genotypes/Low_Mutation_Rate <br>
+The simulated data includes 100 representable fitness landscape each representing a given DAG of restrictions between 7 mutations. <br>
+The fitness landscape information is included in the file below, which is summarized as a 128 by 100 matrix, each element of which represents the fitness of one of the 2^7=128 binary genotypes of length 7 on one of these 100 fitness landscapes.  <br>
+- Data/Simulated_Data/FitnessLandcapes.rds <br>
+
+From each of these 100 fitness landscapes, 200 binary genotypes of length 7 has been generated through evolutionary simulations (discussed in ref #19 in the manuscript) under two different scenarios: <br>
+i) high mutation rate (10^-5) and fast detection regime, which has resulted in the following 100 genotype files: <br> 
+- Data/Simulated_Data/Genotypes/High_Mutation_Rate <br>
+
+ii) low mutation rate (10^-6) and slow detection regime, which has resulted in the following 100 genotype files: <br>
+- Data/Simulated_Data/Genotypes/Low_Mutation_Rate <br>
+
+For the details of how these fitness landscapes are created and how the genotypes are simulated, please check the reference #19 in the manuscript. <br> 
+
 
 #### 2.3. Real Data
-Data/Real_Data/Genotypes <br>
-Data/Real_Data/GeneNames <br>
+The binary genotypes for 15 cancer types in TCGA data are provided in the following dataset: <br>
+- Data/Real_Data/Genotypes <br>
+
+The genotypes are binary vectors of length 10, which are defined based the presence or absence of at least one non-silent genetic alterations in 10 most frequently mutated driver genes, which are cancer-type specific and whose names are listed in the following files: <br>  
+- Data/Real_Data/GeneNames <br>
+
+For further details about these TCGA-derived dataset, please check the reference #10 in the manuscript. <br> 
+
 
 #### 2.4. Posets
+The 219 unique transitively-closed DAGs of size n=4 are provided in the following folder: <br> 
+- Data/Posets4 <br>
+
+The 4231 unique transitively-closed DAGs of size n=5 are provided in the following folder: <br> 
+-Data/Posets5 <br>
+
+The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below.
 
 
 ---
