@@ -22,7 +22,7 @@ You can download the CT-CBN and H-CBN softwares and follow the installation inst
 
 #### BCBN Software:
 You can download the R codes for the BCBN R at: https://bsse.ethz.ch/cbg/software/bcbn.html <br>
-We have slightly debugged and updated the original BCBN codes as an R-package called "rBCBN", which is available at: https://github.com/rockwillck/rBCBN/tree/main
+We have slightly debugged and updated the original BCBN codes, and presented it as an R-package called "rBCBN" that is available at: https://github.com/rockwillck/rBCBN/tree/main <br>
 The "rBCBN" is necessary for the BCBN based workflow. <br>
 
 
