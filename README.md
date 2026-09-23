@@ -38,8 +38,9 @@ Furthermore, the collection of unique transitively closed posets of size 4 and 5
 
 #### 2.1. Synthetic Data
 The following two separate synthetic datasets are included, which differ based on whether mutual exclusivity is considered or not: <br>
-- Data/Synthetic_Data/Genotypes/With_Mutual_Exclusivity <br>
-- Data/Synthetic_Data/Genotypes/Without_Mutual_Exclusivity <br>
+- $${\color{blue}Data/Synthetic\\_Data/Genotypes/With\\_Mutual\\_Exclusivity}$$ <br>
+- $${\color{blue}Data/Synthetic\\_Data/Genotypes/Without\\_Mutual\\_Exclusivity}$$ <br>
+
 
 Each dataset contains 219 binary genotype matrices each corresponding to one of the 219 unique transitively closed DAGs of size 4. <br>
 Each matrix has 200 rows and 4 columns to represent 200 samples of binary genotypes of length 4. <br>
@@ -48,34 +49,34 @@ The codes generating these synthetic data are presented and discussed in section
 #### 2.2. Simulated Data
 The simulated data includes 100 representable fitness landscape each representing a given DAG of restrictions between 7 mutations. <br>
 The fitness landscape information is included in the file below, which is summarized as a 128 by 100 matrix, each element of which represents the fitness of one of the 2^7=128 binary genotypes of length 7 on one of these 100 fitness landscapes.  <br>
-- Data/Simulated_Data/FitnessLandcapes.rds <br>
+- $${\color{blue}Data/Simulated\\_Data/FitnessLandcapes.rds}$$ <br>
 
 From each of these 100 fitness landscapes, 200 binary genotypes of length 7 has been generated through evolutionary simulations (discussed in ref #19 in the manuscript) under two different scenarios: <br>
 i) high mutation rate (10^-5) and fast detection regime, which has resulted in the following 100 genotype files: <br> 
-- Data/Simulated_Data/Genotypes/High_Mutation_Rate <br>
+- $${\color{blue}Data/Simulated\\_Data/Genotypes/High\\_Mutation\\_Rate}$$ <br>
 
 ii) low mutation rate (10^-6) and slow detection regime, which has resulted in the following 100 genotype files: <br>
-- Data/Simulated_Data/Genotypes/Low_Mutation_Rate <br>
+- $${\color{blue}Data/Simulated\\_Data/Genotypes/Low\\_Mutation\\_Rate}$$ <br>
 
 For the details of how these fitness landscapes are created and how the genotypes are simulated, please check the reference #19 in the manuscript. <br> 
 
 
 #### 2.3. Real Data
 The binary genotypes for 15 cancer types in TCGA data are provided in the following dataset: <br>
-- Data/Real_Data/Genotypes <br>
+- $${\color{blue}Data/Real\\_Data/Genotypes}$$ <br>
 
 The genotypes are binary vectors of length 10, which are defined based the presence or absence of at least one non-silent genetic alterations in 10 most frequently mutated driver genes, which are cancer-type specific and whose names are listed in the following files: <br>  
-- Data/Real_Data/GeneNames <br>
+- $${\color{blue}Data/Real\\_Data/GeneNames}$$ <br>
 
 For further details about these TCGA-derived dataset, please check the reference #10 in the manuscript. <br> 
 
 
 #### 2.4. Posets
 The 219 unique transitively-closed DAGs of size n=4 are provided in the following folder: <br> 
-- Data/Posets4 <br>
+- $${\color{blue}Data/Posets4}$$ <br>
 
 The 4231 unique transitively-closed DAGs of size n=5 are provided in the following folder: <br> 
-- Data/Posets5 <br>
+- $${\color{blue}Data/Posets5}$$ <br>
 
 The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below. <br>
 
@@ -84,7 +85,7 @@ The codes generating these poset files are presented and discussed in section **
 
 ## 3. Codes:
 The list of R codes required for running the R-CBN-based, CT-CBN-based, H-CBN-based and B-CBN-Based workflows for quantifying pathway probability distributions starting from a given binary genotype data is provided in the following excel sheet and its image below: <br>
-- Codes/00_CodeList.xlsx <br>
+- $${\color{blue}Codes/00\\_CodeList.xlsx}$$ <br>
 
 The list of codes are color-coded and divided into 7 sections: <br>
 - Part 1 (Yellow): Includes 11 .R files each containing a set of functions required for a specific step in one of the workflow. <br>
