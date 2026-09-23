@@ -39,8 +39,8 @@ Furthermore, the collection of unique transitively closed posets of size 4 and 5
 
 #### Synthetic Data
 Based on whether mutual exclusivity is considered or not, the following two separate synthetic datasets are included: <br>
-$${\color{blue}Data/Synthetic_Data/Genotypes/With_Mutual_Exclusivity}$$ <br>
-$${\color{blue}Data/Synthetic_Data/Genotypes/Without_Mutual_Exclusivity}$$ <br>
+$${\color{blue}Data/Synthetic\_Data/Genotypes/With\_Mutual\_Exclusivity}$$ <br>
+$${\color{blue}Data/Synthetic\_Data/Genotypes/Without\_Mutual\_Exclusivity}$$ <br>
 Each dataset contains 219 binary genotype matrices each corresponding to one of the 219 unique transitively closed DAGs of size 4. <br>
 Each matrix has 200 rows and 4 columns to represent 200 samples of binary genotypes of length 4. <br>
 Data/Synthetic_Data/Genotypes/With_Mutual_Exclusivity
