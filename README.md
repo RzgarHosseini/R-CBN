@@ -133,7 +133,7 @@ Note that the above script file requires the functions defined in $${\color{blue
 ---
 
 ### 3.2. Quartet-RCBN Workflow:
-The (Quartet) R-CBN work flow includes the following steps: <br>
+The (Quartet) R-CBN workflow includes the following steps: <br>
 
 #### Step 1: File Preparation:
 In this step, all subsets of length 4 of a given genotype data are enumerated and stored in separate files, which are formatted such that they will be ready to be used in the next step (the execution step). <br>
@@ -182,13 +182,30 @@ $ Rscript --vanilla Codes/18_QuartetRCBN_Quantification.R $PWD $subfolder $filen
 ```
 
 Note that the above script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/06\\_QuartetRCBN\\_Functions.R}$$. <br>
-The final output will be a 210 by 24 pathway probability matrix, each element of which corresponds to a given pathway (columns) for a given quartet (rows). 
-This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory, in this example.
+The final output will be a 210 by 24 pathway probability matrix, each element of which corresponds to a given pathway (columns) for a given quartet (rows). <br>
+This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory, in this example. <br>
 
 ---
 
 ### 3.3. Quintet-RCBN Workflow:
-X
+The codes for the Quintet-RCBN model is very similar to those of the Quartet-RCBN. The main differences are that here genotype subsets of size 5 are needed to be created and also 4231 posets of size 5 must be considered. <br>
+Note that the running time in the step 2 in the Quintet-RCBN is more than 30 times that of the Quartet-RCBN. <br>
+Therefore, in my analyses, for quantifying pathways of length 5, I used the approximation scheme in the Ensemble-RCBN method. <br>
+I only used the Quintet-RCBN for validating the approximation used in the Ensemble-RCBN method (see table 1 in the manuscript) <br>
+
+The three steps of the Quintet-RCBN workflow, for the previous example, can be summarized as follows: <br>
+
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla Codes/Misc/QuintetRCBN_Preparation.R $PWD $subfolder $filename
+$ Rscript --vanilla Codes/Misc/QuintetRCBN_Execution.R $PWD $subfolder $filename
+$ Rscript --vanilla Codes/Misc/QuintetRCBN_Quantification.R $PWD $subfolder $filename
+```
+
+The final output will be a 252 by 120 pathway probability matrix, each element of which corresponds to a given pathway (columns) for a given quartet (rows). <br>
+This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_Quintet/R}$$ directory, in this example. <br>
 
 ---
 
