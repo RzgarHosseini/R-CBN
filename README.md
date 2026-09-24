@@ -280,7 +280,7 @@ $ Rscript --vanilla Codes/21_CTCBN_Execution.R $PWD $subfolder $filename
 ```
 
 #### Step 3: Pathway Probability Quantification:
-This step is done by the $${\color{blue}Codes/22\\_CTCBN\\_Quantification.R}$$ R script, which requires $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/08\\_CTCBN\\_Function.R}$$ functions. <br>
+This step is done by the $${\color{blue}Codes/22\\_CTCBN\\_Quantification.R}$$ R script, which requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/08\\_CTCBN\\_Function.R}$$. <br>
 ```shell
 $ Rscript --vanilla Codes/22_CTCBN_Quantification.R $PWD $subfolder $filename
 ```
@@ -300,7 +300,9 @@ The final outputs will be as follows: <br>
 ---
 
 ### 3.6. H-CBN Workflow:
-Similarly, the workflow for the H-CBN model can be summarized as follows:
+Similarly, the workflow for the H-CBN model can be summarized as follows:<br>
+
+$${\color{red}Note:}$$ The simulated annealing algorithm in H-CBN model is initiated by a maximum-likelihood poset inferred by the CT-CBN model. Therefore, the H-CBN workflow for a given genotype file must begin after step 2 of the CT-CBN workflow is finished for the genotype data of interest. <br> 
 
 #### Step 1: File Preparation:
 This step is done by the $${\color{blue}Codes/23\\_HCBN\\_Preparation.R}$$ R script. <br>
@@ -315,10 +317,19 @@ $ Rscript --vanilla Codes/24_HCBN_Execution.R $PWD $subfolder $filename
 ```
 
 #### Step 3: Pathway Probability Quantification:
-This step is done by the $${\color{blue}Codes/25\\_HCBN\\_Quantification.R}$$ R script, which requires $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/09\\_HCBN\\_Function.R}$$  functions. <br>
+This step is done by the $${\color{blue}Codes/25\\_HCBN\\_Quantification.R}$$ R script, which requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/09\\_HCBN\\_Function.R}$$. <br>
 ```shell
 $ Rscript --vanilla Codes/25_HCBN_Quantification.R $PWD $subfolder $filename
 ```
+
+The final outputs will be as follows: <br>
+- For n=4 (first iteration): a 210 by 24 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n4/H}$$ directory <br>
+- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/H}$$ directory <br>
+- For n=6 (first iteration): a 210 by 720 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/H}$$ directory <br>
+- For n=7 (first iteration): a 120 by 5040 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/H}$$ directory <br>
+- For n=8 (first iteration): a 45 by 40320 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/H}$$ directory <br>
+- For n=9 (first iteration): a 10 by 362,880 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/H}$$ directory <br>
+- For n=10 (first iteration): a 1 by 3,628,800 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/H}$$ directory <br>
 
 <br>
 <br>
@@ -326,8 +337,7 @@ $ Rscript --vanilla Codes/25_HCBN_Quantification.R $PWD $subfolder $filename
 ---
 
 ### 3.7. B-CBN Workflow:
-Finally, the workflow for the B-CBN model can be summarized as follows:
-
+Finally, the workflow for the B-CBN model can be summarized as follows:<br>
 
 #### Step 1: File Preparation:
 This step is done by $${\color{blue}Codes/26\\_BCBN\\_Preparation.R}$$ R script. <br>
@@ -342,10 +352,21 @@ $ Rscript --vanilla Codes/27_BCBN_Execution.R $PWD $subfolder $filename
 ```
 
 #### Step 3: Pathway Probability Quantification:
-This step is done by $${\color{blue}Codes/28\\_BCBN\\_Quantification.R}$$ R script, which requires $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/10\\_BCBN\\_Function.R}$$  functions. <br>
+This step is done by $${\color{blue}Codes/28\\_BCBN\\_Quantification.R}$$ R script, which requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/10\\_BCBN\\_Function.R}$$. <br>
 ```shell
 $ Rscript --vanilla Codes/28_BCBN_Quantification.R $PWD $subfolder $filename
 ```
+
+The final outputs will be as follows: <br>
+- For n=4 (first iteration): a 210 by 24 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n4/B}$$ directory <br>
+- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/B}$$ directory <br>
+- For n=6 (first iteration): a 210 by 720 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/B}$$ directory <br>
+- For n=7 (first iteration): a 120 by 5040 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/B}$$ directory <br>
+- For n=8 (first iteration): a 45 by 40320 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/B}$$ directory <br>
+- For n=9 (first iteration): a 10 by 362,880 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/B}$$ directory <br>
+- For n=10 (first iteration): a 1 by 3,628,800 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/B}$$ directory <br>
+
+$${\color{red}Note:}$$ Because at larger n the space of potential posets are extremely large, sometimes more than 10,000 among the 100,000 posets sampled by the B-CBN model are unique, which requires more than 10,000 iterations of the CT-CBN model for BCBN-based pathway quantifications. Therefore, expect unusually long running time for n=9 and n=10, which would require parallelization on an HPC server. <br>
 
 <br>
 <br>
