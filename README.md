@@ -107,6 +107,7 @@ The list of codes are color-coded and divided into 7 sections: <br>
 <img width="1579" height="504" alt="Screenshot 2026-09-21 at 8 24 15 PM" src="https://github.com/user-attachments/assets/d235accc-8304-46c5-99ff-b4ff988d7ba8" />
 
 <br>
+<br>
 
 ---
 
@@ -139,6 +140,7 @@ $ Rscript --vanilla Codes/15_MutantGeneration.R $PWD
 ```
 Note that the above script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/04\\_MutantGeneration\\_Function.R}$$. <br>
 
+<br>
 <br>
 
 ---
@@ -197,6 +199,7 @@ The final output will be a 210 by 24 pathway probability matrix, each element of
 This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory, in this example. <br>
 
 <br>
+<br>
 
 ---
 
@@ -221,6 +224,7 @@ The final output will be a 252 by 120 pathway probability matrix, each element o
 This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_Quintet/R}$$ directory, in this example. <br>
 
 <br>
+<br>
 
 ---
 
@@ -228,6 +232,7 @@ This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in 
 X
 
 
+<br>
 <br>
 
 ---
@@ -237,12 +242,14 @@ X
 
 
 <br>
+<br>
 
 ---
 
 ### 3.6. H-CBN Workflow:
 X
 
+<br>
 <br>
 
 ---
@@ -252,6 +259,7 @@ X
 
 
 <br>
+<br>
 
 ---
 
@@ -260,6 +268,7 @@ X
 
 
 <br>
+<br>
 
 ---
 
@@ -267,6 +276,7 @@ X
 X
 
 
+<br>
 <br>
 
 ---
