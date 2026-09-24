@@ -360,7 +360,7 @@ $${\color{red}Note:}$$ Because at larger n the space of potential posets are ext
 ### 3.8. Pathway Compatibility Analysis:
 After finishing the above workflows, the resulting probability matrices can be further analyzed to measure various metrics such as predictability or the Jensen-Shannon Divergence using the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$. <br>
 Another important metric is the pathway compatibility score, which is calculated by constructing a pathway-genotype compatibility matrix on a given genotype data of interest.<br>
-This is achieved using the set of functions defined in $${\color{blue}Codes/05\\PathwayCompatibility\\_Functions.R}$$, which are used in the $${\color{blue}Codes/29\\PathwayCompatibility\\_Analysis.R}$$ R script.<br>
+This is achieved using the set of functions defined in $${\color{blue}Codes/05\\_PathwayCompatibility\\_Functions.R}$$, which are used in the $${\color{blue}Codes/29\\_PathwayCompatibility\\_Analysis.R}$$ R script.<br>
 
 For our example, we can run the following code:<br>
 ```shell
@@ -371,7 +371,7 @@ $ Rscript --vanilla Codes/29_PathwayCompatibility_Analysis.R $PWD $subfolder $fi
 ``` 
 The above code, for any given $$N$$ between 4 and 10, generates a pathway-genotype compatibility matrix of dimension $${10 \choose N}$$ and $$N!$$, which will be stored as $${\color{blue}Path2Geno.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_nN}$$ directory <br>
 
-Finally, in the above script, the spearman's rank correlation between the pathway probabilities and their corresponding compatibility scores will be calculated and stored in their corresponding directories specified in lines 61 to 64 in the $${\color{blue}Codes/29\\PathwayCompatibility\\_Analysis.R}$$ R script.  
+Finally, in the above script, the spearman's rank correlation between the pathway probabilities and their corresponding compatibility scores will be calculated and stored in their corresponding directories specified in lines 61 to 64 in the $${\color{blue}Codes/29\\_PathwayCompatibility\\_Analysis.R}$$ R script.  
 
 <br>
 <br>
