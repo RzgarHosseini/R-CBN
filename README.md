@@ -241,11 +241,11 @@ $ Rscript --vanilla Codes/19_EnsembleRCBN_Quantification.R $PWD $subfolder $file
 ```
 The final outputs will be as follows: <br>
 - For n=5 (first iteration): a $${10 \choose 5}=252$$ by $${5!=120}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/R}$$ directory <br>
-- For n=6 (first iteration): a $${10 \choose 6=210}$$ by $${6!=720}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/R}$$ directory <br>
-- For n=7 (first iteration): a $${10 \choose 7=120}$$ by $${7!=5040}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/R}$$ directory <br>
-- For n=8 (first iteration): a $${10 \choose 8=45}$$ by $${8!=40320}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/R}$$ directory <br>
-- For n=9 (first iteration): a $${10 \choose 9=10}$$ by $${9!=362880}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/R}$$ directory <br>
-- For n=10 (first iteration): a $${10 \choose 10=1}$$ by $${10!=3628800}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/R}$$ directory <br>
+- For n=6 (first iteration): a $${10 \choose 6}=210$$ by $${6!=720}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/R}$$ directory <br>
+- For n=7 (first iteration): a $${10 \choose 7}=120$$ by $${7!=5040}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/R}$$ directory <br>
+- For n=8 (first iteration): a $${10 \choose 8}=45$$ by $${8!=40320}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/R}$$ directory <br>
+- For n=9 (first iteration): a $${10 \choose 9}=10$$ by $${9!=362880}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/R}$$ directory <br>
+- For n=10 (first iteration): a $${10 \choose 10}=1$$ by $${10!=3628800}$$ pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/R}$$ directory <br>
 
 $${\color{red}Note:}$$ Please see my comments on the running time of each of the above iterations of the algorithm at $${\color{blue}Codes/19\\_EnsembleRCBN\\_Quantification.R}$$. For the last two iterations (n=9 and n=10), parallelization on an HPC server will be necessary. 
 
