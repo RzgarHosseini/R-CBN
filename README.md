@@ -230,8 +230,8 @@ This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in 
 
 ### 3.4. Ensemble-RCBN Workflow:
 The dynamic programming iterations in the Ensemble-RCBN algorithm can be executed for a given genotype matrix using the $${\color{blue}Codes/19\\_EnsembleRCBN\\_Quantification.R}$$ script file. <br>
-Note that this script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/07\\_EnsembleRCBN\\_Functions.R}$$. <br>
-More importantly, the algorithm is initiated using the outputs of the Quartet-RCBN workflow. Therefore, the Ensemble-RCBN codes must be executed after all three steps of the Quartet-RCBN workflow are done for the given genotype data of interest. <br>
+This script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/07\\_EnsembleRCBN\\_Functions.R}$$. <br>
+$${\color{red}Note:}$$ the algorithm is initiated using the outputs of the Quartet-RCBN workflow. Therefore, the Ensemble-RCBN codes must be executed after all three steps of the Quartet-RCBN workflow are done for the given genotype data of interest. <br>
 
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
@@ -247,7 +247,7 @@ The final outputs will be as follows: <br>
 - For n=9 (first iteration): a 10 by 362,880 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n9/R}$$ directory <br>
 - For n=10 (first iteration): a 1 by 3,628,800 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n10/R}$$ directory <br>
 
-$${\color{red}Note:}$$ Please check my comments on the running time of each of the above iterations of the algorithm at $${\color{blue}Codes/19\\_EnsembleRCBN\\_Quantification.R}$$. For the last two iterations (n=9 and n=10), parallelization on an HPC server will be necessary. 
+$${\color{red}Note:}$$ Please see my comments on the running time of each of the above iterations of the algorithm at $${\color{blue}Codes/19\\_EnsembleRCBN\\_Quantification.R}$$. For the last two iterations (n=9 and n=10), parallelization on an HPC server will be necessary. 
 
 <br>
 <br>
