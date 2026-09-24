@@ -231,7 +231,7 @@ This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in 
 ### 3.4. Ensemble-RCBN Workflow:
 The dynamic programming iterations in the Ensemble-RCBN algorithm can be executed for a given genotype matrix using the $${\color{blue}Codes/19\\_EnsembleRCBN\\_Quantification.R}$$ script file. <br>
 This script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/07\\_EnsembleRCBN\\_Functions.R}$$. <br>
-$${\color{red}Note:}$$ the algorithm is initiated using the outputs of the Quartet-RCBN workflow. Therefore, the Ensemble-RCBN codes must be executed after all three steps of the Quartet-RCBN workflow are done for the given genotype data of interest. <br>
+$${\color{red}Note:}$$ the algorithm is initiated using the outputs of the Quartet-RCBN workflow. Therefore, executing the Ensemble-RCBN codes must begin after all three steps of the Quartet-RCBN workflow are done for the given genotype data of interest. <br>
 
 ```shell
 $ cd Full_Path_to_the_R-CBN_Repository
