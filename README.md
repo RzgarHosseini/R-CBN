@@ -9,6 +9,8 @@ Sayed-Rzgar Hosseini
 ## Abstract
 Cancer is an evolutionary disorder driven by stepwise accumulation of selectively advantageous mutations forming mutational pathways, characterization of which is essential for diagnosis, prognosis and treatment of cancer. Conjunctive Bayesian networks (CBN) are probabilistic graphical models that have enabled the inference of these pathways of cancer progression from genomic data. Previously, we showed that the CBN model can be used to estimate the predictability of cancer evolution as it is able to reflect the underlying cancer fitness landscapes directly from genotypic data. However, the reliability of the inferred pathway probability distributions has not yet been ascertained, which motivates the need for a robust inferential framework. Thus, in this study I have introduced the robust-CBN model (R-CBN) to fill this gap. By analyzing synthetic, simulated and real data, I have rigorously compared R-CBN with previous CBN models including CT-CBN, H-CBN, and B-CBN, and the results indicate a superior robustness of the R-CBN model in various settings. Furthermore, I have devised a dynamic programming approximation algorithm, which renders the model amenable to scalability. Thus, R-CBN has the potential to be broadly utilized as a reliable framework to infer cancer-driving evolutionary trajectories, and to distill mechanistic insights from cross-sectional cancer genomic data. <br>
 
+<br>
+
 ---
 ## 1. Prerequisites and Installation:
 
@@ -29,6 +31,8 @@ Thus, the full address to the CT-CBN software should be "Full_Path_to_the_R-CBN_
 You can download the BCBN R codes at: https://bsse.ethz.ch/cbg/software/bcbn.html <br>
 We have slightly debugged and updated the original BCBN code, and presented it as an R-package called "rBCBN" that is available at: https://github.com/rockwillck/rBCBN/tree/main <br>
 The "rBCBN" is necessary for the BCBN based workflow. <br>
+
+<br>
 
 ---
 
@@ -80,6 +84,7 @@ The 4231 unique transitively-closed DAGs of size n=5 are provided in the followi
 
 The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below. <br>
 
+<br>
 
 ---
 
@@ -98,6 +103,8 @@ The list of codes are color-coded and divided into 7 sections: <br>
 
 
 <img width="1579" height="504" alt="Screenshot 2026-09-21 at 8 24 15 PM" src="https://github.com/user-attachments/assets/d235accc-8304-46c5-99ff-b4ff988d7ba8" />
+
+<br>
 
 ---
 
@@ -129,6 +136,8 @@ $ cd Full_Path_to_the_R-CBN_Repository
 $ Rscript --vanilla Codes/15_MutantGeneration.R $PWD
 ```
 Note that the above script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/04\\_MutantGeneration\\_Function.R}$$. <br>
+
+<br>
 
 ---
 
@@ -185,13 +194,15 @@ Note that the above script file requires the functions defined in $${\color{blue
 The final output will be a 210 by 24 pathway probability matrix, each element of which corresponds to a given pathway (columns) for a given quartet (rows). <br>
 This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory, in this example. <br>
 
+<br>
+
 ---
 
 ### 3.3. Quintet-RCBN Workflow:
-The codes for the Quintet-RCBN model is very similar to those of the Quartet-RCBN. The main differences are that here genotype subsets of size 5 are needed to be created and also 4231 posets of size 5 must be considered. <br>
-Note that the running time in the step 2 in the Quintet-RCBN is more than 30 times that of the Quartet-RCBN. <br>
-Therefore, in my analyses, for quantifying pathways of length 5, I used the approximation scheme in the Ensemble-RCBN method. <br>
-I only used the Quintet-RCBN for validating the approximation used in the Ensemble-RCBN method (see table 1 in the manuscript) <br>
+The codes for the Quintet-RCBN model is very similar to those of the Quartet-RCBN. The main differences are that here genotype subsets of size 5 are needed to be created and also 4231 posets of size 5 located at $${\color{blue}Data/Posets5}$$ must be considered. <br>
+Note that the running time in the step 2 in the Quintet-RCBN is considerably higher (more than 30 times) than that of the Quartet-RCBN. <br>
+Therefore, in my analyses, for quantifying pathways of length 5, I sticked to the approximation scheme in the Ensemble-RCBN method. <br>
+I only used the Quintet-RCBN for checking the validity of the approximation used in the Ensemble-RCBN method (see table 1 in the manuscript) <br>
 
 The three steps of the Quintet-RCBN workflow, for the previous example, can be summarized as follows: <br>
 
@@ -207,35 +218,54 @@ $ Rscript --vanilla Codes/Misc/QuintetRCBN_Quantification.R $PWD $subfolder $fil
 The final output will be a 252 by 120 pathway probability matrix, each element of which corresponds to a given pathway (columns) for a given quartet (rows). <br>
 This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_Quintet/R}$$ directory, in this example. <br>
 
+<br>
+
 ---
 
 ### 3.4. Ensemble-RCBN Workflow:
 X
+
+
+<br>
 
 ---
 
 ### 3.5. CT-CBN Workflow:
 X
 
+
+<br>
+
 ---
 
 ### 3.6. H-CBN Workflow:
 X
+
+<br>
 
 ---
 
 ### 3.7. B-CBN Workflow:
 X
 
+
+<br>
+
 ---
 
 ### 3.8. Pathway Compatibility Analysis:
 X
 
+
+<br>
+
 ---
 
 ### 3.9. Fitness Landscape Analysis:
 X
+
+
+<br>
 
 ---
 
