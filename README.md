@@ -33,6 +33,7 @@ We have slightly debugged and updated the original BCBN code, and presented it a
 The "rBCBN" is necessary for the BCBN based workflow. <br>
 
 <br>
+<br>
 
 ---
 
@@ -84,6 +85,7 @@ The 4231 unique transitively-closed DAGs of size n=5 are provided in the followi
 
 The codes generating these poset files are presented and discussed in section **"3.1. Data Generation"** below. <br>
 
+<br>
 <br>
 
 ---
