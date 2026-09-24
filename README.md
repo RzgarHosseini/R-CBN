@@ -302,7 +302,7 @@ The final outputs will be as follows: <br>
 ### 3.6. H-CBN Workflow:
 Similarly, the workflow for the H-CBN model can be summarized as follows:<br>
 
-$${\color{red}Note:}$$ The simulated annealing algorithm in H-CBN model is initiated by a maximum-likelihood poset inferred by the CT-CBN model. Therefore, the H-CBN workflow for a given genotype file must begin after step 2 of the CT-CBN workflow is finished for the genotype data of interest. <br> 
+$${\color{red}Note:}$$ The simulated annealing algorithm in H-CBN model is initiated by a maximum-likelihood poset inferred by the CT-CBN model. Therefore, the H-CBN workflow must begin after step 2 of the CT-CBN workflow is finished for the genotype data of interest. <br> 
 
 #### Step 1: File Preparation:
 This step is done by the $${\color{blue}Codes/23\\_HCBN\\_Preparation.R}$$ R script. <br>
