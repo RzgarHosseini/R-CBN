@@ -286,13 +286,8 @@ $ Rscript --vanilla Codes/22_CTCBN_Quantification.R $PWD $subfolder $filename
 ```
 
 The final outputs will be as follows: <br>
-- For n=4 (first iteration): a 210 by 24 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n4/C}$$ directory <br>
-- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/C}$$ directory <br>
-- For n=6 (first iteration): a 210 by 720 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/C}$$ directory <br>
-- For n=7 (first iteration): a 120 by 5040 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/C}$$ directory <br>
-- For n=8 (first iteration): a 45 by 40320 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/C}$$ directory <br>
-- For n=9 (first iteration): a 10 by 362,880 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/C}$$ directory <br>
-- For n=10 (first iteration): a 1 by 3,628,800 pathway probability matrix stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/C}$$ directory <br>
+- For any given $$N$$ between 4 and 10: a pathway probability matrix of dimention $${10 \choose N}$$ and $$N!$$ will be stored as $${\color{blue}PathProbC.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_nN/C}$$ directory <br>
+
 
 <br>
 <br>
@@ -323,13 +318,7 @@ $ Rscript --vanilla Codes/25_HCBN_Quantification.R $PWD $subfolder $filename
 ```
 
 The final outputs will be as follows: <br>
-- For n=4 (first iteration): a 210 by 24 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n4/H}$$ directory <br>
-- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/H}$$ directory <br>
-- For n=6 (first iteration): a 210 by 720 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/H}$$ directory <br>
-- For n=7 (first iteration): a 120 by 5040 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/H}$$ directory <br>
-- For n=8 (first iteration): a 45 by 40320 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/H}$$ directory <br>
-- For n=9 (first iteration): a 10 by 362,880 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/H}$$ directory <br>
-- For n=10 (first iteration): a 1 by 3,628,800 pathway probability matrix stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/H}$$ directory <br>
+- For any given $$N$$ between 4 and 10: a pathway probability matrix of dimention $${10 \choose N}$$ and $$N!$$ will be stored as $${\color{blue}PathProbH.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_nN/H}$$ directory <br>
 
 <br>
 <br>
@@ -353,20 +342,15 @@ $ Rscript --vanilla Codes/27_BCBN_Execution.R $PWD $subfolder $filename
 
 #### Step 3: Pathway Probability Quantification:
 This step is done by $${\color{blue}Codes/28\\_BCBN\\_Quantification.R}$$ R script, which requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/10\\_BCBN\\_Function.R}$$. <br>
+
 ```shell
 $ Rscript --vanilla Codes/28_BCBN_Quantification.R $PWD $subfolder $filename
 ```
 
 The final outputs will be as follows: <br>
-- For n=4 (first iteration): a 210 by 24 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n4/B}$$ directory <br>
-- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/B}$$ directory <br>
-- For n=6 (first iteration): a 210 by 720 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n6/B}$$ directory <br>
-- For n=7 (first iteration): a 120 by 5040 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n7/B}$$ directory <br>
-- For n=8 (first iteration): a 45 by 40320 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n8/B}$$ directory <br>
-- For n=9 (first iteration): a 10 by 362,880 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n9/B}$$ directory <br>
-- For n=10 (first iteration): a 1 by 3,628,800 pathway probability matrix stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n10/B}$$ directory <br>
+- For any given $$N$$ between 4 and 10: a pathway probability matrix of dimension $${10 \choose N}$$ and $$N!$$ will be stored as $${\color{blue}PathProbB.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_nN/B}$$ directory <br>
 
-$${\color{red}Note:}$$ Because at larger n the space of potential posets are extremely large, sometimes more than 10,000 among the 100,000 posets sampled by the B-CBN model are unique, which requires more than 10,000 iterations of the CT-CBN model for BCBN-based pathway quantifications. Therefore, expect unusually long running time for n=9 and n=10, which would require parallelization on an HPC server. <br>
+$${\color{red}Note:}$$ Because at larger n the space of potential posets are extremely large, sometimes more than 10,000 among the 100,000 posets sampled by the B-CBN model are unique, which requires more than 10,000 iterations of the CT-CBN model for BCBN-based pathway quantifications. Therefore, expect unusually long running time for n=9 and n=10, unless you parallelize the code on an HPC server. <br>
 
 <br>
 <br>
@@ -374,8 +358,20 @@ $${\color{red}Note:}$$ Because at larger n the space of potential posets are ext
 ---
 
 ### 3.8. Pathway Compatibility Analysis:
-X
+After finishing the above workflows, the resulting probability matrices can be further analyzed to measure various metrics such as predictability or the Jensen-Shannon Divergence using the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$. <br>
+Another important metric is the pathway compatibility score, which is calculated by constructing a pathway-genotype compatibility matrix on a given genotype data of interest.<br>
+This is achieved using the set of functions defined in $${\color{blue}Codes/05\\PathwayCompatibility\\_Functions.R}$$, which are used in the $${\color{blue}Codes/29\\PathwayCompatibility\\_Analysis.R}$$ R script.<br>
 
+For our example, we can run the following code:<br>
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla Codes/29_PathwayCompatibility_Analysis.R $PWD $subfolder $filename
+``` 
+The above code, for any given $$N$$ between 4 and 10, generates a pathway-genotype compatibility matrix of dimension $${10 \choose N}$$ and $$N!$$, which will be stored as $${\color{blue}Path2Geno.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_nN}$$ directory <br>
+
+Finally, in the above script, the spearman's rank correlation between the pathway probabilities and their corresponding compatibility scores will be calculated and stored in their corresponding directories specified in lines 61 to 64 in the $${\color{blue}Codes/29\\PathwayCompatibility\\_Analysis.R}$$ R script.  
 
 <br>
 <br>
