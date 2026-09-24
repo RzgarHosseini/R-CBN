@@ -371,7 +371,7 @@ $ Rscript --vanilla Codes/29_PathwayCompatibility_Analysis.R $PWD $subfolder $fi
 ``` 
 The above code, for any given $$N$$ between 4 and 10, generates a pathway-genotype compatibility matrix of dimension $${10 \choose N}$$ and $$N!$$, which will be stored as $${\color{blue}Path2Geno.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_nN}$$ directory <br>
 
-Finally, in the above script, the spearman's rank correlation between the pathway probabilities and their corresponding compatibility scores will be calculated and stored in their corresponding directories specified in lines 61 to 64 in the $${\color{blue}Codes/29\\_PathwayCompatibility\\_Analysis.R}$$ R script.  
+Finally, in the above script, the spearman's rank correlation between the pathway probabilities and their corresponding compatibility scores will be calculated and stored in their corresponding directories specified in lines 61 to 64 in the $${\color{blue}Codes/29\\_PathwayCompatibility\\_Analysis.R}$$ R script. <br> 
 
 <br>
 <br>
@@ -379,8 +379,14 @@ Finally, in the above script, the spearman's rank correlation between the pathwa
 ---
 
 ### 3.9. Fitness Landscape Analysis:
-X
+The function implementing the evolutionary SSWM-based approach for quantifying pathway probability distributions for a given fitness landscape is provided in $${\color{blue}Codes/11\\_FitnessLandscapeSSWM\\_Functions.R}$$, which is used by the $${\color{blue}Codes/30\\_FitnessLandscapeSSWM\\_Analysis.R}$$ R script: <br>
 
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ Rscript --vanilla Codes/30_FitnessLandscapeSSWM_Analysis.R $PWD
+``` 
+In the above code, the pathway probability distributions and their predictability for the 100 fitness landscapes in the simulated data are quantified. <br>
+Furthermore, as an example, the Jensen-Shannon Divergence between the probability distributions of any pair of any pair of fitness landscapes is calculated. <br>
 
 <br>
 <br>
