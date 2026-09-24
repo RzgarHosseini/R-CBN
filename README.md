@@ -240,7 +240,7 @@ $ filename="Glioblastoma_Multiforme"
 $ Rscript --vanilla Codes/19_EnsembleRCBN_Quantification.R $PWD $subfolder $filename
 ```
 The final outputs will be as follows: <br>
-- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n5/R}$$ directory <br>
+- For n=5 (first iteration): a 252 by 120 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\color{red}\\_n5/R}$$ directory <br>
 - For n=6 (first iteration): a 210 by 720 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n6/R}$$ directory <br>
 - For n=7 (first iteration): a 120 by 5040 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n7/R}$$ directory <br>
 - For n=8 (first iteration): a 45 by 40320 pathway probability matrix stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n8/R}$$ directory <br>
@@ -255,7 +255,34 @@ $${\color{red}Note:}$$ Please see my comments on the running time of each of the
 ---
 
 ### 3.5. CT-CBN Workflow:
-X
+The workflow for the other CBN models also includes the three steps of i) data preparation, ii) model execution, and finally iii) pathway probability quantification. <br>
+The details of the file preparation only slightly differs for different CBN models, but the details of the model execution and pathway probability quantifications substantially differ among them, so each of workflow requires separate set of functions and R script files. <br>
+However, the final user interface for each of these frameworks is very similar to the R-CBN one presented above. <br>
+
+Let's stick to the same example for all the other workflows: <br>
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla Codes/19_EnsembleRCBN_Quantification.R $PWD $subfolder $filename
+```
+
+#### Step 1: File Preparation:
+This step is done by X, which requires X and X functions. <br>
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla X.R $PWD $subfolder $filename
+```
+
+#### Step 2: Model Execution:
+This step is done by X, which requires X and X functions. <br>
+
+
+#### Step 3: Pathway Probability Quantification:
+This step is done by X, which requires X and X functions. <br>
+
 
 
 <br>
