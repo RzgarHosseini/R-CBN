@@ -133,7 +133,57 @@ Note that the above script file requires the functions defined in $${\color{blue
 ---
 
 ### 3.2. Quartet-RCBN Workflow:
-X
+The (Quartet) R-CBN work flow includes the following steps: <br>
+
+#### Step 1: File Preparation:
+In this step, all subsets of length 4 of a given genotype data are enumerated and stored in separate files, which are formatted such that they will be ready to be used in the next step (the execution step). <br>
+This step is done using the $${\color{blue}Codes/16\\_QuartetRCBN\\_Preparation.R}$$ script file, which requires specification of: <br>
+i) the full path to the R-CBN repository <br>
+ii) the pathway to the folder within the R-CBN repository, where the genotype data of interest is located <br>
+iii) the name of the file which includes the genotype data of interest <br>
+
+Here is an example: Let's consider the genotype data in the $${\color{blue}Glioblastoma\\_Multiforme.dat}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes}$$ subfolder in this repository as the genotype data of interest: <br> 
+
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla Codes/16_QuartetRCBN_Preparation.R $PWD $subfolder $filename
+```
+
+The above program creates 210 data files located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory. Each of these files include genotypes of length 4, which are subsets of the corresponding genotypes of length 10 in the original data. <br>
+
+#### Step 2: CT-CBN Execution:
+In this step, the CT-CBN method is executed 219 times on each of the 210 genotype files generated in step 1. 
+At each of the 219 iterations, CT-CBN considers one of the 219 posets in $${\color{blue}Data/Posets4}$$, and quantifies the parameters and likelihood under the given poset. <br>
+This step is done using the $${\color{blue}Codes/17\\_QuartetRCBN\\_Execution.R}$$ script file, which requires specification of the same three arguments as in the step 1.
+
+Following the same example as in step 1, we can execute step 2 as follows:
+
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla Codes/17_QuartetRCBN_Execution.R $PWD $subfolder $filename
+```
+
+The above program creates 210 data results files, which will be located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory. <br>
+Each of these 210 results files inlcudes 219 lines each of which includes the estimated parameters and the likelihood corresponding to one of the 219 posets. <br>
+
+#### Step 3: Pathway Probability Quantification:
+In this step, which is done using the $${\color{blue}Codes/18\\_QuartetRCBN\\_Quantification.R}$$ script file, the pathway probabilities are quantified for each of the 210 subsets.  <br>
+This step, for our example, will be executed as follows:  <br>
+
+```shell
+$ cd Full_Path_to_the_R-CBN_Repository
+$ subfolder="Data/Real_Data/Genotypes"
+$ filename="Glioblastoma_Multiforme"
+$ Rscript --vanilla Codes/18_QuartetRCBN_Quantification.R $PWD $subfolder $filename
+```
+
+Note that the above script file requires the functions defined in $${\color{blue}Codes/01\\_Basic\\_Functions.R}$$ and $${\color{blue}Codes/06\\_QuartetRCBN\\_Functions.R}$$. <br>
+The final output will be a 210 by 24 pathway probability matrix, each element of which corresponds to a given pathway (columns) for a given quartet (rows). 
+This matrix will be stored as $${\color{blue}PathProbR.RData}$$ file located in the $${\color{blue}Data/Real\\_Data/Genotypes/Glioblastoma\\_Multiforme\\_n4/R}$$ directory, in this example.
 
 ---
 
