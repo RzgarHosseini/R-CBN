@@ -4,7 +4,7 @@
 ## Author:
 Sayed-Rzgar Hosseini <br>
 Department of Mathematical Sciences at the University of Texas at El Paso (UTEP) <br>
-Email Addresses: razgar@gmail.com or shosseini3@utep.edu <br>
+Email Address: shosseini3@utep.edu <br>
 
 ---
 
