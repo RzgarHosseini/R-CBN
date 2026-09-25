@@ -1,7 +1,6 @@
 # R-CBN
----
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22950072.svg)](https://doi.org/10.5281/zenodo.22950072)
+---
 
 ## Author:
 Sayed-Rzgar Hosseini <br>
