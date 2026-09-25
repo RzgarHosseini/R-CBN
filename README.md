@@ -2,8 +2,10 @@
 ---
 
 ## Author:
-Sayed-Rzgar Hosseini <br> 
-Email Address: razgar@gmail.com or shosseini3@utep.edu
+Sayed-Rzgar Hosseini <br>
+Department of Mathematical Sciences <br>
+University of Texas at El Paso (UTEP) <br>
+Email Addresses: razgar@gmail.com or shosseini3@utep.edu <br>
 
 ---
 
