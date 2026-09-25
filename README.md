@@ -393,8 +393,6 @@ $ Rscript --vanilla Codes/30_FitnessLandscapeSSWM_Analysis.R $PWD
 In the above code, the pathway probability distributions and their predictability for the 100 fitness landscapes in the simulated data are quantified. <br>
 Furthermore, as an example, the Jensen-Shannon Divergence between the probability distributions of any pair of any pair of fitness landscapes is calculated. <br>
 
-<br>
-<br>
 ---
 
 ## Citation
