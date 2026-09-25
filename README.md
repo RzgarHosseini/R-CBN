@@ -391,7 +391,6 @@ Furthermore, as an example, the Jensen-Shannon Divergence between the probabilit
 
 <br>
 <br>
-
 ---
 
 ## Citation
@@ -399,8 +398,3 @@ Furthermore, as an example, the Jensen-Shannon Divergence between the probabilit
 Sayed-Rzgar Hosseini. Robust and scalable inference of cancer progression pathways using Conjunctive Bayesian Networks. bioRxiv 2025.07.15.663924; doi: https://doi.org/10.1101/2025.07.15.663924
 
 ---
-
-## License
-
-- **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**
-
