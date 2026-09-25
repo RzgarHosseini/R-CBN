@@ -6,7 +6,6 @@
 Sayed-Rzgar Hosseini
 Department of Mathematical Sciences at The University of Texas at El Paso (UTEP) <br>
 Email Address: shosseini3@utep.edu <br>
-[My ORCID:]([https://orcid.org](https://orcid.org/0000-000202308-6754))
 
 ---
 
