@@ -3,7 +3,7 @@
 ---
 
 ## Author:
-Sayed-Rzgar Hosseini
+Sayed-Rzgar Hosseini <br>
 Department of Mathematical Sciences at The University of Texas at El Paso (UTEP) <br>
 Email Address: shosseini3@utep.edu <br>
 
