@@ -1,8 +1,9 @@
 # R-CBN
 ---
 
-## Authors:
+## Author:
 Sayed-Rzgar Hosseini 
+Email Address: razgar@gmail.com or shosseini3@utep.edu
 
 ---
 
