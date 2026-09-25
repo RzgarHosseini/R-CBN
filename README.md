@@ -23,7 +23,7 @@ You can download the CT-CBN and H-CBN softwares and follow the installation inst
 
 $${\color{red}Note:}$$ The CT-CBN software must be installed at the same directory as the one where this repository is going to be located. I have already included the program folder (ct-cbn-0.1.04b) in this repository. You need to install the software according to the instructions provided in the README file that is located in the program folder. Thus, the full address to the CT-CBN software would be "Full_Path_to_the_R-CBN_Repository"/ct-cbn-0.1.04b/ct-cbn. <br>
 
-The following programs directly use the CT-CBN softare. If you decide to change the location of the CT-CBN software in the above programs, you must edit the codes manually: <br> 
+The following programs directly use the CT-CBN softare. If you decide to change the location of the CT-CBN software in these programs, you must edit their codes manually: <br> 
 - Codes/17_QuartetRCBN_Execution.R <br>
 - Codes/21_CTCBN_Execution.R <br>
 - Codes/24_HCBN_Execution.R <br>
