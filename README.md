@@ -3,10 +3,11 @@
 ---
 
 ## Author:
-Sayed-Rzgar Hosseini <br>
-Department of Mathematical Sciences at the University of Texas at El Paso (UTEP) <br>
+Sayed-Rzgar Hosseini
+Department of Mathematical Sciences at The University of Texas at El Paso (UTEP) <br>
 Email Address: shosseini3@utep.edu <br>
-[My ORCID]([https://orcid.org](https://orcid.org/0000-0002-2308-6754))
+[My ORCID:]([https://orcid.org](https://orcid.org/0000-000202308-6754))
+
 ---
 
 ## Abstract
