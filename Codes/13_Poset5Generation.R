@@ -147,3 +147,4 @@ for (i in 1:4231){
   sink(file = NULL)
 }
 
+#The final number of unique posets of size 5 according to the above code is thus 4231, which corroborates with the number reported in The On-Line Encyclopedia of Integer Sequences (OEIS): https://oeis.org/A001035

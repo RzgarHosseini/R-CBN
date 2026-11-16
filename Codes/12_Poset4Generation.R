@@ -113,3 +113,4 @@ for (i in 1:219){
   sink(file = NULL)
 }
 
+#The final number of unique posets of size 4 according to the above code is thus 219, which corroborates with the number reported in The On-Line Encyclopedia of Integer Sequences (OEIS): https://oeis.org/A001035

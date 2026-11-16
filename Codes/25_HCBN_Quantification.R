@@ -4,7 +4,7 @@ DIR<-args[1] #Path to the repository
 subDIR<-args[2] #Path to the file within the repository
 InputFileName<-args[3] #filename
 source(paste0(DIR,"/Codes/01_Basic_Functions.R"))
-source(paste0(DIR,"/09_HCBN_Functions.R"))
+source(paste0(DIR,"/Codes/09_HCBN_Functions.R"))
 #################################################################################################################
 GenotypeMatrix<-read.table(paste0(DIR,"/",subDIR,"/",InputFileName,".dat"))
 Sample.Size<-dim(GenotypeMatrix)[1]

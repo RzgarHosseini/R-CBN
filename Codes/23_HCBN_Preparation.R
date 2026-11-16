@@ -34,6 +34,9 @@ for (n in 4:N.Genes){
   for (i in 1:N.Subsets){
     
     filename<-paste0(DIR,"/",subDIR,"/",InputFileName,"_n",n,"/C/Results",i,".dat")
+    system(paste0("sed -i '1d' ",filename))
+    system(paste0("sed -i '1d' ",filename))
+    
     mat<-read.table(filename)
     INDX<-which.max(mat[,4])#maximum likelihood DAG
     ZINDX<-mat[INDX,1]  
